@@ -29,6 +29,7 @@ public class CameraActivity extends AppCompatActivity implements CameraBridgeVie
     File cascFile;
     CascadeClassifier faceDetector;
     private Mat mRgba, mGrey;
+    private facialEmotionRecognition facialEmotionRecognition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,14 @@ public class CameraActivity extends AppCompatActivity implements CameraBridgeVie
         }
         javaCameraView.setCvCameraViewListener(this);
         javaCameraView.setCameraPermissionGranted();
+        try{
+            int inputSize=48;
+            facialEmotionRecognition = new facialEmotionRecognition(getAssets(), CameraActivity.this, "model.tflite",inputSize);//(getAssets(),CameraActivity.this, "model.tfite");
+        }
+        catch(IOException e){
+            e.printStackTrace();
+
+        }
     }
 
     @Override
