@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Human-Scenario_Understanding-v2</string>
+    <string name="title">Scene-It</string>
+    <string name="subtitle">Human Scenario Understanding</string>
+    <string name="tap_msg">Tap Anywhere to Continue</string>
+
+
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
