@@ -3,6 +3,7 @@
     <string name="title">Scene-It</string>
     <string name="subtitle">Human Scenario Understanding</string>
     <string name="tap_msg">Tap Anywhere to Continue</string>
+    <string name="img_msg">Tap Anywhere to Take Photo</string>
 
 
     <string name="action_settings">Settings</string>
